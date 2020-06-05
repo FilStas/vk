@@ -1,7 +1,7 @@
 package ru.netology.domain;
 
 public class LikeContent {
-    String imgLike;
-    int countLike;
+    private String imgLike;
+    private int countLike;
 
 }

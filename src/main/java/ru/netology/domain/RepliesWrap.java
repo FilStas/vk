@@ -1,7 +1,7 @@
 package ru.netology.domain;
 
 public class RepliesWrap {
-    String repliesId;
-    String repliesInfo;
+    private String repliesId;
+    private String repliesInfo;
 
 }

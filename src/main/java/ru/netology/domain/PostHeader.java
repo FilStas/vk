@@ -1,8 +1,8 @@
 package ru.netology.domain;
 
 public class PostHeader {
-    String postImage;
-    String postAuthor;
-    String postData;
+    private String postImage;
+    private String postAuthor;
+    private String postData;
 
 }
