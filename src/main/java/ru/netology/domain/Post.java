@@ -3,7 +3,6 @@ package ru.netology.domain;
 public class Post {
     private int id;
     private int ownerId;
-    private int fromId;
     private int createdBy;
     private int date;
     private String domain;
@@ -34,14 +33,6 @@ public class Post {
 
     public void setOwnerId(int ownerId) {
         this.ownerId = ownerId;
-    }
-
-    public int getFromId() {
-        return fromId;
-    }
-
-    public void setFromId(int fromId) {
-        this.fromId = fromId;
     }
 
     public int getCreatedBy() {
