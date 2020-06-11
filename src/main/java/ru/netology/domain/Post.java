@@ -3,20 +3,16 @@ package ru.netology.domain;
 public class Post {
     private int id;
     private int ownerId;
-    private int createdBy;
     private int date;
+    private int countLike;
+    private int countViews;
     private String domain;
     private String text;
-    private int replyPostId;
-    private int friendsOnly;
-    private int replyOwnerId;
+    private boolean friendsOnly;
     private RepostsPost repostsPost;
     private CommentsPost commentsPost;
     private RepliesWrap repliesWrap;
     private LikeContent likeContent;
-    private WallPostContent wallPostContent;
-    private PostHeader postHeader;
-    private ViewsContent viewsContent;
     private Geo geo;
 
     public int getId() {
@@ -35,20 +31,36 @@ public class Post {
         this.ownerId = ownerId;
     }
 
-    public int getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(int createdBy) {
-        this.createdBy = createdBy;
-    }
-
     public int getDate() {
         return date;
     }
 
     public void setDate(int date) {
         this.date = date;
+    }
+
+    public int getCountLike() {
+        return countLike;
+    }
+
+    public void setCountLike(int countLike) {
+        this.countLike = countLike;
+    }
+
+    public int getCountViews() {
+        return countViews;
+    }
+
+    public void setCountViews(int countViews) {
+        this.countViews = countViews;
+    }
+
+    public String getDomain() {
+        return domain;
+    }
+
+    public void setDomain(String domain) {
+        this.domain = domain;
     }
 
     public String getText() {
@@ -59,28 +71,12 @@ public class Post {
         this.text = text;
     }
 
-    public int getReplyPostId() {
-        return replyPostId;
-    }
-
-    public void setReplyPostId(int replyPostId) {
-        this.replyPostId = replyPostId;
-    }
-
-    public int getFriendsOnly() {
+    public boolean isFriendsOnly() {
         return friendsOnly;
     }
 
-    public void setFriendsOnly(int friendsOnly) {
+    public void setFriendsOnly(boolean friendsOnly) {
         this.friendsOnly = friendsOnly;
-    }
-
-    public int getReplyOwnerId() {
-        return replyOwnerId;
-    }
-
-    public void setReplyOwnerId(int replyOwnerId) {
-        this.replyOwnerId = replyOwnerId;
     }
 
     public RepostsPost getRepostsPost() {
@@ -115,30 +111,6 @@ public class Post {
         this.likeContent = likeContent;
     }
 
-    public WallPostContent getWallPostContent() {
-        return wallPostContent;
-    }
-
-    public void setWallPostContent(WallPostContent wallPostContent) {
-        this.wallPostContent = wallPostContent;
-    }
-
-    public PostHeader getPostHeader() {
-        return postHeader;
-    }
-
-    public void setPostHeader(PostHeader postHeader) {
-        this.postHeader = postHeader;
-    }
-
-    public ViewsContent getViewsContent() {
-        return viewsContent;
-    }
-
-    public void setViewsContent(ViewsContent viewsContent) {
-        this.viewsContent = viewsContent;
-    }
-
     public Geo getGeo() {
         return geo;
     }
@@ -146,5 +118,4 @@ public class Post {
     public void setGeo(Geo geo) {
         this.geo = geo;
     }
-
 }
