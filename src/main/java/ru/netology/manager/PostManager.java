@@ -6,7 +6,7 @@ public class PostManager {
     private Post[] posts;
 
     public Post[] getPosts() {
-        return null;
+        return posts;
     }
 
     public Post[] search(int ownerId, String domain, String query, int ownersOnly, int count, int offset) {
